@@ -3,7 +3,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: #212121;
 }
 
 button{
@@ -21,7 +21,7 @@ button{
     background-color: var(--btn-color);
     border-radius: 1em;
     outline: none;
-    box-shadow: 0 0 1em .25 var(--glow-color),
+    box-shadow: 0 0 1em .25em var(--glow-color),
                 0 0 4em 1em var(--glow-spread-color),
                 inset 0 0 0.75em .25em var(--glow-color);
     text-shadow: 0 0 .5em var(--glow-color);
@@ -44,7 +44,12 @@ button::after{
 button:hover{
     color: var(--btn-color);
     background-color: var(--glow-color);
-    box-shadow: 0 0 1em .25 var(--glow-color),
-                0 0 4em 2em var(--glow-spread-color)
-                inset 0 0 .5em .25em var(--glow-color)
+    box-shadow: 0 0 1em .25em var(--glow-color),
+                0 0 4em 2em var(--glow-spread-color),
+                inset 0 0 .5em .25em var(--glow-color);
+}
+button:active {
+    box-shadow: 0 0 0 .6em .25em var(--glow-color),
+                0 0 2.5em 2em var(--glow-spread-color),
+                inset 0 0 .5em .25em var(--glow-color);
 }
